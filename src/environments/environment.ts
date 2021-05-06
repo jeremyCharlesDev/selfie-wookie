@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apis: {
+    selfies: {
+      url: 'https://1b1f5c05-48e0-45b1-ba05-7e47d14d0cb4.mock.pstmn.io/selfie'
+    }
+  }
 };
 
 /*

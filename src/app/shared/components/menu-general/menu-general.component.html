@@ -1,0 +1,31 @@
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SaW</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/" routerLinkActive="active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/selfies" routerLinkActive="active">Les selfies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/fights" routerLinkActive="active">Les duels en cours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/stats" routerLinkActive="active">Tes stats</a>
+            </li>
+          </ul>
+          <div class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" #zoneRecherche>
+            <button type="submit" class="btn btn-outline-success" (click)="rechercher()">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>

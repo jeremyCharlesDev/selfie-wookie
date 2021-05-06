@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  apis: {
+    selfies: {
+      url: '<<a renseigner::PROD>>'
+    }
+  }
 };

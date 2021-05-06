@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col">
+    <button type="button" class="btn btn-success mb-3" (click)="demandeAfficherPourAjoutSelfie()">Ajouter un selfie</button>
+  </div>
+</div>
+
+<app-add-selfie *ngIf="selfieAAjouter" [selfieARenseigner]="selfieAAjouter" (annulerAjouter)="cacherZoneAjoutSelfie()"></app-add-selfie>
+
+<app-un-selfie-readonly [unSelfie]="selfie" *ngFor="let selfie of lesSelfies"></app-un-selfie-readonly>
+
